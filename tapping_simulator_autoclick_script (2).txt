@@ -1,0 +1,11 @@
+getrenv()._G.autoTap = false;
+
+while task.wait (0.1) do
+local args = {
+    [1] = "Main"
+}
+
+game:GetService("ReplicatedStorage").Events.Tap:FireServer(unpack(args))
+ 
+
+end
